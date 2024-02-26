@@ -14,12 +14,15 @@ public class Ball : MonoBehaviour
     }
 
     private void InitialPush() {
-        Vector2 dir = Vector2.left;
+        Vector2 dir = Vector2.right;
         dir.y = Random.Range(-maxInitialAngle, maxInitialAngle);
         rb2d.velocity = dir * moveSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        Debug.Log("ladida");
+        ScoreZone scoreZone = collision.GetComponent<ScoreZone>();
+        if (scoreZone) {
+            Debug.Log("do something!");
+        }
     }
 }
