@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public Rigidbody2D rb2d;
+    public float maxInitialAngle = 0.67f;
+    public float moveSpeed = 1f;
+
+    private void Start() {
+        InitialPush();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void InitialPush() {
+        Vector2 dir = Vector2.left;
+        dir.y = Random.Range(-maxInitialAngle, maxInitialAngle);
+        rb2d.velocity = dir * moveSpeed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        Debug.Log("ladida");
     }
 }
