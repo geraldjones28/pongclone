@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3108899066073906712}
   - component: {fileID: 8578000762233762279}
   m_Layer: 0
-  m_Name: NorthWall
+  m_Name: NorthSouthWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

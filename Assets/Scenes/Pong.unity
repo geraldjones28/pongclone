@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8590701761289959224, guid: e2f0062ec69217e44a2742efa53538ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.86
+      value: 12.68
       objectReference: {fileID: 0}
     - target: {fileID: 8590701761289959224, guid: e2f0062ec69217e44a2742efa53538ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -493,7 +493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1611349778}
   maxInitialAngle: 0.67
-  moveSpeed: 5
+  moveSpeed: 8
+  maxStartY: 4
 --- !u!1 &1693670255
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8590701761289959224, guid: e2f0062ec69217e44a2742efa53538ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.77
+      value: -7.53
       objectReference: {fileID: 0}
     - target: {fileID: 8590701761289959224, guid: e2f0062ec69217e44a2742efa53538ff, type: 3}
       propertyPath: m_LocalPosition.y
